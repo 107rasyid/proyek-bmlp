@@ -133,14 +133,16 @@ Keduanya digunakan untuk mengukur sejauh mana prediksi model menyimpang dari nil
 
 ### Rumus
 
-- **MSE (Mean Squared Error)**  
+- **MSE (Mean Squared Error)**
+
 $$
 \text{MSE} = \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2
 $$
 
 MSE mengukur rata-rata selisih kuadrat antara rating aktual dan prediksi.
 
-- **RMSE (Root Mean Squared Error)**  
+- **RMSE (Root Mean Squared Error)**
+
 $$
 \text{RMSE} = \sqrt{\text{MSE}}
 $$
