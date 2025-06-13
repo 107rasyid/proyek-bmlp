@@ -101,8 +101,33 @@ Top-5 buku dengan estimasi rating tertinggi untuk setiap pengguna.
 | Collaborative Filtering| Bisa menangkap preferensi yang lebih luas  | Cold-start problem jika pengguna/item baru  |
 
 ## Evaluation
-## ✅ Evaluation
+### Evaluation Model Content Based Filtering
+Model Content Based Filtering dievaluasi seberapa presisi hasil terhadap input yang diberikan. Evaluasi ini mengukur seberapa banyak hasil rekomendasi yang mengandung kata kunci dari input judul (misalnya: "Baby").
 
+**Rumus:**
+
+\[
+\text{Precision} = \frac{\text{Jumlah judul yang mengandung kata kunci}}{\text{Jumlah total rekomendasi}}
+\]
+
+**Contoh:**
+- Input Judul: **"Baby"**
+- Hasil Rekomendasi:
+  1. He's My Baby Now ✅
+  2. Baby ✅
+  3. One for My Baby : A Novel ✅
+  4. Baby Elephant (Baby) ✅
+  5. Baby, Oh Baby! (Time of Your Life) ✅
+
+**Hasil:**
+
+| Metrik           | Nilai    |
+|------------------|----------|
+| Precision        | 1.00     |
+| Total Rekomendasi| 5        |
+| Match Judul      | 5        |
+
+### Evaluation Model Collaborative Filtering
 Model Collaborative Filtering dievaluasi menggunakan dua metrik regresi umum: **Mean Squared Error (MSE)** dan **Root Mean Squared Error (RMSE)**.  
 Keduanya digunakan untuk mengukur sejauh mana prediksi model menyimpang dari nilai rating sebenarnya.
 
