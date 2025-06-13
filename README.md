@@ -106,9 +106,9 @@ Model Content Based Filtering dievaluasi seberapa presisi hasil terhadap input y
 
 **Rumus:**
 
-\[
+$$
 \text{Precision} = \frac{\text{Jumlah judul yang mengandung kata kunci}}{\text{Jumlah total rekomendasi}}
-\]
+$$
 
 **Contoh:**
 - Input Judul: **"Baby"**
@@ -131,20 +131,22 @@ Model Content Based Filtering dievaluasi seberapa presisi hasil terhadap input y
 Model Collaborative Filtering dievaluasi menggunakan dua metrik regresi umum: **Mean Squared Error (MSE)** dan **Root Mean Squared Error (RMSE)**.  
 Keduanya digunakan untuk mengukur sejauh mana prediksi model menyimpang dari nilai rating sebenarnya.
 
-### 📐 Metrik Evaluasi
+### Rumus
 
 - **MSE (Mean Squared Error)**  
-  $$
-  \text{MSE} = \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2
-  $$
-  MSE mengukur rata-rata selisih kuadrat antara rating aktual dan prediksi.
+$$
+\text{MSE} = \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2
+$$
+
+MSE mengukur rata-rata selisih kuadrat antara rating aktual dan prediksi.
 
 - **RMSE (Root Mean Squared Error)**  
-  $$
-  \text{RMSE} = \sqrt{\text{MSE}}
-  $$
-  RMSE lebih mudah diinterpretasikan karena satuannya sama dengan rating sebenarnya.
+$$
+\text{RMSE} = \sqrt{\text{MSE}}
+$$
 
-### 📊 Hasil Evaluasi Model Collaborative Filtering
+RMSE lebih mudah diinterpretasikan karena satuannya sama dengan rating sebenarnya.
+
+### Hasil Evaluasi Model Collaborative Filtering
 - MSE: 3.7151
 - RMSE: 1.9275
